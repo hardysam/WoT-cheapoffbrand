@@ -1076,6 +1076,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DampTime: 0.2
   m_target: {fileID: 0}
+  zoomSpeed: 10
+  rotateSpeed: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
