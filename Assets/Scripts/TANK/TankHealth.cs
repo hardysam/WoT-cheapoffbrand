@@ -41,6 +41,7 @@ private void Awake()
     private void SetHealthUI()
     {
         //TODO: Update the user interface showing the tank's health
+        //make a health bar above tank?
     }
 
     public void TakeDamage(float amount)
