@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject[] m_Tanks;
 
@@ -51,7 +51,7 @@ using UnityEngine.UI;
             case GameState.Playing:
                 bool isGameOver = false;
 
-                m_gameTime += m_gameTime.deltaTime;
+                m_gameTime += Time.deltaTime;
                 int seconds = Mathf.RoundToInt(m_gameTime);
 
                 if (OneTankLeft() == true)
@@ -60,7 +60,7 @@ using UnityEngine.UI;
                 }
                 else if (IsPlayerDead() == true)
                 {
-                    isGameOver == true;
+                    isGameOver = true;
                 }
 
                 if (isGameOver == true)
@@ -88,5 +88,32 @@ using UnityEngine.UI;
         }
     }
 
+    private bool OneTankLeft()
+    {
+        int numTanksLeft = 0;
+
+        for (int i = 0; i < m_Tanks.Length; i++)
+        {
+            if (m_Tanks[i].activeSelf == true)
+            {
+                numTanksLeft++;
+            }
+        }
+
+        return numTanksLeft <= 1;
+    }
+
+    private bool IsPlayerDead()
+    {
+        for (int i = 0; i < m_Tanks.Length; i++)
+        {
+            if (m_Tanks[i].activeSelf == false)
+            {
+                if (m_Tanks[i].tag == "Player")
+                    return true;
+            }
+        }
+
+        return false;
+    }
 }
-*/

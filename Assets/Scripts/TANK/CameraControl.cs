@@ -28,11 +28,11 @@ public class CameraControl : MonoBehaviour
         Camera.main.transform.localPosition = cameraPos;
 
         //move the camera on right mouse drag
-        if (Input.GetMouseButton(1))
+        //if (Input.GetMouseButton(1))
         {
             Vector3 angles = transform.localEulerAngles
-                + (Vector3.right * Input.GetAxis("Mouse Y")
-                + Vector3.up * Input.GetAxis("Mouse X")) * rotateSpeed;
+                //+ (Vector3.right * Input.GetAxis("Mouse Y")
+                + Vector3.up * Input.GetAxis("CameraMove") * rotateSpeed;
 
             angles.x = Mathf.Clamp(angles.x, 0, 80);
 
