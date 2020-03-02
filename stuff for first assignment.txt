@@ -1,0 +1,13 @@
+The environmental impacts of game development are minimal compared to heavy industry.
+
+The main resource consumed is electrical power. This could be offset by using solar power on site for a large company.
+
+
+Some potential WHS concerns with game development are:
+ - RSI from using a mouse and keyboard for prolonged periods of time
+ - Back problems from bad posutre
+ - Stress, fatigue and other psychological symptoms from crunch time culture.
+ - Eye strain from staring at a screen for a prolonged period of time.
+
+
+Unity
