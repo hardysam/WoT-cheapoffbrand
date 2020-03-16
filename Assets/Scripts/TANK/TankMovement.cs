@@ -6,7 +6,7 @@ public class TankMovement : MonoBehaviour
 {
 
     public float m_Speed = 12f;         //How fast the tank moves forward and back
-    public float m_TurnSpeed = 180f;    //How fast the tank turns in degrees per second
+    public float m_TurnSpeed = 240f;    //How fast the tank turns in degrees per second
 
     private Rigidbody m_Rigidbody;      //The current value of the movement input
     private float m_MovementInputValue; //The current value of the tunr input
